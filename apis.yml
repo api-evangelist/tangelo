@@ -1,8 +1,29 @@
 aid: tangelo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tangelo.png
 name: Tangelo
-description: 'Tangelo is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Tangelo is a Latin American fintech company, surfaced in the API Evangelist
+  network as a portfolio company of QED Investors (a fintech-focused venture
+  firm). Tangelo runs an API-first developer program: it publishes API
+  documentation through a Stoplight-hosted developer portal at
+  docs.tangelolatam.com (workspace "Tangelo Latam Docs") and operates a branded
+  Atlassian status page at status.tangelolatam.com. Its marketing site runs on
+  Webflow. This profile was enriched by live probing of Tangelo's public
+  surfaces; the underlying OpenAPI definition is served behind the Stoplight
+  single-page app and was not machine-extractable in this pass, so spec-derived
+  artifacts (packages, scopes, errors, authentication) remain open for a
+  follow-up once the specification URL is captured.
 url: https://raw.githubusercontent.com/api-evangelist/tangelo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Financial Services
+- Latin America
+- LATAM
+- Developer Portal
+- API
+- Status Page
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.tangelolatam.com/
+- type: DeveloperPortal
+  url: https://docs.tangelolatam.com/
+- type: Documentation
+  url: https://docs.tangelolatam.com/
+- type: StatusPage
+  url: https://status.tangelolatam.com/
+- type: Lifecycle
+  url: lifecycle/tangelo-lifecycle.yml
+- type: DomainSecurity
+  url: security/tangelo-domain-security.yml
+- type: WellKnown
+  url: well-known/tangelo-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

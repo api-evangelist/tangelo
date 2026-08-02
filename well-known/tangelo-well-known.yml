@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: live GET probes of Tangelo hosts
+notes: >-
+  Probed the developer-docs and status hosts for the /.well-known discovery
+  surface. No Tangelo-owned well-known document was served (200). The marketing
+  host (www.tangelolatam.com, Webflow) refused TLS to the probe client. The only
+  200 observed was Atlassian Statuspage's own generic security.txt on the
+  statuspage.io shared host, which is not Tangelo-owned and is intentionally not
+  captured or pointed at.
+hosts:
+  - host: https://docs.tangelolatam.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://tangelolatam.statuspage.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        owned_by: atlassian-statuspage-shared-host
+        captured: false

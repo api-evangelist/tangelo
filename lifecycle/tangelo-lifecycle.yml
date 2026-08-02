@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of tangelolatam.com subdomains (docs/status) + apis.yml
+notes: >-
+  Tangelo runs an API-first developer program. Its developer documentation is
+  hosted on a Stoplight portal (docs.tangelolatam.com, workspace "Tangelo Latam
+  Docs") and it operates a branded Atlassian status page. No public versioning,
+  deprecation, or SLA policy page was reachable with available tooling.
+versioning:
+  scheme: unknown
+  current: null
+  docs: https://docs.tangelolatam.com/
+deprecation:
+  policy_url: null
+  sunset_header: null
+sla:
+  url: null
+  uptime_target: null
+status_page:
+  url: https://status.tangelolatam.com/
+  provider: atlassian-statuspage
+  hosted: https://tangelolatam.statuspage.io/
+  active: false
+  note: >-
+    Provider-owned status subdomain resolves to tangelolatam.statuspage.io
+    (Atlassian Statuspage) but is currently rendered "Page Inactive".
+deprecated_operations: []
