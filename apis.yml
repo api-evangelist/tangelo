@@ -48,9 +48,8 @@ modified: '2026-07-21'
 tags:
 - Company
 - Fintech
-- Financial-Services
+- Financial Services
 - Latin America
-- Developer Portal
 - Status Pages
 tags_raw:
 - Company
@@ -58,9 +57,9 @@ tags_raw:
 - Financial Services
 - Latin America
 - LATAM
-- Developer Portal
 - API
 - Status Page
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -87,3 +86,5 @@ x-enrichment:
   status: enriched
   artifacts_added: 3
   pass: local-v1
+x-tags-removed:
+- Developer Portal
